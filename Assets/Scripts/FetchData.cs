@@ -52,6 +52,7 @@ public class FetchData : MonoBehaviour
     private void RetryButtonClicked()
     {
         messageObject.SetActive(false);
+        loadingObject.gameObject.SetActive(true);
         StartCoroutine(GetData());
     }
 }
